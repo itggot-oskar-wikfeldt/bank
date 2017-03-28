@@ -1,14 +1,72 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>bank</title>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" href="css/main.css">
-	<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,500" rel="stylesheet">
+    <title>bank</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,500" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
 <body>
 
+<div id="main">
+
+    <header>
+        <h1>BraBank</h1>
+    </header>
+
+    <div class="info-box">
+        <h3 id="saldo">Saldo: 50kr</h3>
+        <div id="loanStuff">
+            <input type="text" name="loan" maxlength="6" size="4" id="loanInput" placeholder="Belopp"><br>
+            <button onclick="loan()">Låna</button>
+        </div>
+    </div>
+
+    <div id="overview">
+        <div>
+            <h2>Kontoöversikt</h2>
+        </div>
+
+        <table>
+            <tr>
+                <th>Belopp</th>
+                <th>Kontohändelse</th>
+                <th>Trans.datum</th>
+            </tr>
+            <tr>
+                <td>-20kr</td>
+                <td>ICA</td>
+                <td>6/2-17</td>
+            </tr>
+            <tr>
+                <td>+500kr</td>
+                <td>Lån</td>
+                <td>5/2-17</td>
+            </tr>
+            <tr>
+                <td>+150kr</td>
+                <td>Lån</td>
+                <td>5/2-17</td>
+            </tr>
+            <tr>
+                <td>-3600kr</td>
+                <td>HM</td>
+                <td>4/2-17</td>
+            </tr>
+            <tr>
+                <td>+3600kr</td>
+                <td>Lån</td>
+                <td>4/2-17</td>
+            </tr>
+        </table>
+
+
+    </div>
+
+</div>
+
+<script src="js/main.js"></script>
 
 </body>
 </html>
