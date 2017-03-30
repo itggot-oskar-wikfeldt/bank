@@ -8,3 +8,16 @@ function loan() {
         document.getElementById("saldo").innerHTML = "Saldo: " + saldo + "kr";
     }
 }
+
+function openOverview() {
+    var overview = document.querySelector("#overview");
+    overview.classList.toggle("up");
+}
+
+document.getElementById("loanInput")
+.addEventListener("keyup", function (event) {
+    event.preventDefault();
+    if (event.keyCode == 13) {
+        document.getElementById("loanButton").click();
+    }
+});

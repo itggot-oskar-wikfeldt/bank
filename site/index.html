@@ -4,15 +4,21 @@
     <title>bank</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,500" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="icon" href="img/favicon.png">
 </head>
 <body>
 
 <div id="main">
 
     <header>
-        <h1>BraBank</h1>
+        <div id="logo">
+            <h1 class="other-font">B</h1>
+            <h1>ra</h1>
+            <h1 class="other-font">B</h1>
+            <h1>ank</h1>
+        </div>
         <button>Logga ut</button>
     </header>
 
@@ -20,14 +26,14 @@
         <h3 id="saldo">Saldo: 50kr</h3>
         <div id="loanStuff">
             <input type="text" name="loan" maxlength="6" size="4" id="loanInput" placeholder="Belopp"><br>
-            <button onclick="loan()">Låna</button>
+            <button onclick="loan()" id="loanButton">Låna</button>
         </div>
     </div>
 
     <div id="overview">
         <div id="overviewStuff">
             <h2>Kontoöversikt</h2>
-            <img src="img/arrow_button.svg" class="button">
+            <img src="img/arrow_button.svg" class="button" onclick="openOverview()">
         </div>
 
         <div id="tableContainer">
@@ -68,6 +74,16 @@
 
 
     </div>
+
+</div>
+
+<div id="success">
+    <div class="info-box">
+        <div id="spacer"></div>
+        <h3>Du har lånat ? kr och har nu ? kr saldo.</h3>
+        <button>Ok</button>
+    </div>
+    <div id="scrim"></div>
 
 </div>
 
