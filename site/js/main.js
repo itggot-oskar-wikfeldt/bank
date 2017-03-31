@@ -6,10 +6,16 @@ function loan() {
     if (!isNaN(x) && x > 0) {
         saldo += x;
         document.getElementById("saldo").innerHTML = "Saldo: " + saldo + "kr";
-        console.log("adaaam");
-        var success = document.querySelector("success");
-        success.classList.remove("hidden");
+        document.querySelector("#success").classList.remove("hidden");
+
+        document.getElementById("successMessage").innerHTML = "Du har lånat " + x + " kr och har nu " + saldo + " kr saldo.";
     }
+}
+
+function closeDialog() {
+
+    document.querySelector("#success").classList.add("hidden");
+
 }
 
 function openOverview() {

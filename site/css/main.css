@@ -155,7 +155,7 @@ input {
 
 #overview {
     position: fixed;
-    top: 285px;
+    top: 420px;
     display: flex;
     flex-direction: column;
     padding-top: 10px;
@@ -168,6 +168,11 @@ input {
     padding-right: 30px;
 
     transition: top 0.3s cubic-bezier(.4, 0, .2, 1);
+}
+
+.ad {
+    width: 100%;
+    margin-top: 50px;
 }
 
 .up {
@@ -236,13 +241,16 @@ th {
     height: 200px;
     top: calc(50vh - 100px);
     align-items: center;
-
 }
 
 #success .info-box button {
     background-color: white;
     color: rgba(0,0,0,0.87);
     margin-top: 10px;
+}
+
+#success .info-box h3 {
+    max-height: 50px;
 }
 
 #success .info-box h3 {
